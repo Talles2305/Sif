@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    width: 93%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    height: 70px;
+    border-radius: 10px;
+    }
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;   
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 5px;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 50px;
+    height: 100vh;
+    padding-top: 120px;
+    background:
+      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url(../images/viagem.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#home h1 {
+    color: white;
+    max-width: 600px;
+}
+
+section {
+    padding: 80px 50px;
+}
