@@ -56,7 +56,7 @@
     height: 100vh;
     background:
       linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), 
-      url(../images/viagem].jpg);
+      url(../images/viagem.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -130,57 +130,242 @@
 
 
 .pacotes {
-    width: 100%;
-    padding: 40px 80px;
+    padding: 80px 50px;
+    background: #f5f7fa;
 }
 
 .pacotes h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 30px;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #333;
 }
 
 .cards-container {
-    display: flex;
-    gap: 20px;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .card {
-    width: 300px;
-    padding: 20px;
-    border: 1px solid #ddd;
+    background: linear-gradient(#fafbff, #f2f4f8);
     border-radius: 10px;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: transform .2s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
+    padding: 25px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
 }
 
 .card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border-color: #3498db;
 }
+
 
 .card h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 15px;
 }
 
-.card p {
-    margin: 5px 0;
+.card > p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 .preco-titulo {
-    margin-top: 15px;
-    font-weight: 500;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
 }
 
 .preco {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 20px;
 }
+
+.card a {
+    display: inline-block;
+    background: #f7f9fc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+    width: 100%;
+    text-align: center;
+}
+
+.card a:hover {
+    background: #2980b9;
+}
+
+
+.destinos {
+    padding: 60px 50px;
+}
+
+.destinos h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.scroll-destinos {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 15px;
+    scroll-behavior: smooth;
+
+    scrollbar-width: thin;
+}
+
+.scroll-destinos::-webkit-scrollbar {
+    height: 10px;
+}
+
+.scroll-destinos::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+
+.scroll-destinos::-webkit-scrollbar-thumb {
+    background: #1f1ba0;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.scroll-destinos::-webkit-scrollbar-thumb:hover {
+    background: #FF8535;
+}
+
+.destino-card {
+    background: white;
+    border-radius: 15px;
+    width: 250px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: .3s;
+}
+
+.destino-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+}
+
+.destino-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.destino-card h3 {
+    margin: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.destino-card p {
+    margin: 0 10px 15px 10px;
+    color: #666;
+}
+
+
+/* SEÇÃO DE CONTATO */
+.contato {
+    padding: 80px 40px;
+    background: #f5f7fa;
+}
+
+/* CONTAINER GERAL */
+.contato-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* FORMULÁRIO - LADO ESQUERDO */
+.contato-form {
+    flex: 1;
+}
+
+.contato-form h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-simples {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-simples input,
+.form-simples textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.form-simples textarea {
+    height: 120px;
+    resize: none;
+}
+
+.form-simples button {
+    background: #1f1ba0;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.form-simples button:hover {
+    background: #FF8535;
+}
+
+/* MENSAGEM - LADO DIREITO */
+.contato-mensagem {
+    flex: 1;
+    background: linear-gradient(135deg, #1f1ba0, #4f46e5);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato-mensagem h3 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.contato-mensagem p {
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+

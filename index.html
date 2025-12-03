@@ -6,6 +6,21 @@
     <title>Explore Mundo - Viagens</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
+<script>
+    const carousel = document.querySelector(".carousel");
+    const next = document.querySelector(".next");
+    const prev = document.querySelector(".prev");
+
+    next.addEventListener("click", () => {
+        carousel.scrollLeft += 300;
+    });
+
+    prev.addEventListener("click", () => {
+        carousel.scrollLeft -= 300;
+    });
+</script>
+
 <body>
     <nav class="navbar">
         <img class="logo" src="images/logo.png" alt="Logo Explore Mundo">
@@ -22,11 +37,12 @@
         <div class="conteudoh">
             <h1>Descubra o mundo com quem entende de viagens</h1>
             <p>Pacotes exclusivos, destinos incríveis e a experiência perfeita para a sua próxima aventura.</p>
-            
+
             <a href="#pacotes" class="button1">Comece sua Aventura</a>
-            
+
             <div class="selo">
                 Mais de 10.000 viajantes satisfeitos
+            </div>
         </div>
     </section>
 
@@ -37,88 +53,183 @@
 
             <div class="card">
                 <h3>Caribe dos Sonhos</h3>
-                <p>5 dias<br>
-                Hotel Inclusivo<br>
-                Passeios guiados</p>
+                <p>🕒5 dias<br>
+                🧳Hotel Inclusivo<br>
+                🚶Passeios guiados</p>
                 <p class="preco-titulo">A partir de</p>
                 <p class="preco">R$ 2.999</p>
             </div>
 
             <div class="card">
                 <h3>Europa Clássica</h3>
-                <p>10 dias<br>
-                Paris, Roma e Londres</p>
+                <p>🕒10 dias<br>
+                📍Paris, Roma e Londres</p>
                 <p class="preco-titulo">A partir de</p>
                 <p class="preco">R$ 8.450</p>
             </div>
 
             <div class="card">
                 <h3>Aventura na Patagônia</h3>
-                <p>7 dias<br>
-                Trilhas e paisagens únicas</p>
+                <p>🕒7 dias<br>
+                🚶Trilhas e paisagens únicas</p>
                 <p class="preco-titulo">A partir de</p>
                 <p class="preco">R$ 4.200</p>
             </div>
 
             <div class="card">
                 <h3>Rota das Praias Brasileiras</h3>
-                <p>6 dias<br>
-                Recife • Porto de Galinhas • Maragogi</p>
+                <p>🕒6 dias<br>
+                📍Recife • Porto de Galinhas • Maragogi</p>
                 <p class="preco-titulo">A partir de</p>
                 <p class="preco">R$ 1.850</p>
             </div>
 
             <div class="card">
                 <h3>Disney & Orlando</h3>
-                <p>8 dias<br>
-                Ingressos Inclusos<br>
-                Parques Temáticos</p>
+                <p>🕒8 dias<br>
+                🧳Ingressos Inclusos<br>
+                ✈️Parques Temáticos</p>
                 <p class="preco-titulo">A partir de</p>
                 <p class="preco">R$ 9.990</p>
             </div>
 
             <div class="card">
-            <h3>Tour pela Argentina</h3>
-            <p>5 dias<br>
-            Buenos Aires e vinícolas</p>
-            <p class="preco-titulo">A partir de</p>
-            <p class="preco">R$ 2.300</p>
+                <h3>Tour pela Argentina</h3>
+                <p>🕒5 dias<br>
+                📍Buenos Aires e vinícolas</p>
+                <p class="preco-titulo">A partir de</p>
+                <p class="preco">R$ 2.300</p>
             </div>
 
             <div class="card">
-            <h3>Encantos da Amazônia</h3>
-            <p>7 dias<br>
-            Passeio de barco e trilhas guiadas</p>
-            <p class="preco-titulo">A partir de</p>
-            <p class="preco">R$ 3.450</p>
+                <h3>Encantos da Amazônia</h3>
+                <p>🕒7 dias<br>
+                🚶Passeio de barco e trilhas guiadas</p>
+                <p class="preco-titulo">A partir de</p>
+                <p class="preco">R$ 3.450</p>
             </div>
 
             <div class="card">
                 <h3>Las Vegas Experience</h3>
-                <p>4 dias<br>
-                Shows, cassinos e city tour</p>
+                <p>🕒4 dias<br>
+                🚶Shows, cassinos e city tour</p>
                 <p class="preco-titulo">A partir de</p>
                 <p class="preco">R$ 6.200</p>
             </div>
 
-        <div class="card">
-            <h3>Dubai Luxo</h3>
-            <p>6 dias<br>
-            Hotel 5 estrelas<br>
-            Safari no deserto</p>
-            <p class="preco-titulo">A partir de</p>
-            <p class="preco">R$ 11.800</p>
-        </div>
+            <div class="card">
+                <h3>Dubai Luxo</h3>
+                <p>🕒6 dias<br>
+                🧳Hotel 5 estrelas<br>
+                🚶Safari no deserto</p>
+                <p class="preco-titulo">A partir de</p>
+                <p class="preco">R$ 11.800</p>
+            </div>
 
         </div>
     </section>
 
-    <section id="destinos">
-        <h1>Destinos</h1>
+    <section id="destinos" class="destinos">
+        <h2>Destinos Populares</h2>
+
+        <div class="scroll-destinos">
+
+            <div class="destino-card">
+                <img src="images/paris.jpg" alt="Paris">
+                <h3>Paris, França</h3>
+                <p>🇫🇷 França</p>
+            </div>
+
+            <div class="destino-card">
+                <img src="images/tokyo.jpg" alt="Tóquio">
+                <h3>Tóquio, Japão</h3>
+                <p>🇯🇵 Japão</p>
+            </div>
+
+            <div class="destino-card">
+                <img src="images/noronha.jpg" alt="Noronha">
+                <h3>Fernando de Noronha</h3>
+                <p>🇧🇷 Brasil</p>
+            </div>
+
+            <div class="destino-card">
+                <img src="images/ny.jpg" alt="Nova York">
+                <h3>Nova York</h3>
+                <p>🇺🇸 EUA</p>
+            </div>
+
+            <div class="destino-card">
+                <img src="images/ouropreto.jpg" alt="Nova York">
+                <h3>Ouro Preto</h3>
+                <p>🇧🇷 Brasil</p>
+            </div>
+
+            <div class="destino-card">
+                <img src="images/porto-seguro.jpg" alt="Nova York">
+                <h3>Porto Seguro</h3>
+                <p>🇧🇷 Brasil</p>
+            </div>
+
+            <div class="destino-card">
+                <img src="images/foz.jpg" alt="Nova York">
+                <h3>Foz do Iguaçu</h3>
+                <p>🇧🇷 Brasil</p>
+            </div>
+
+            <div class="destino-card">
+                <img src="images/londres.jpg" alt="Nova York">
+                <h3>Londres</h3>
+                <p>🇬🇧 Reino Unido</p>
+            </div>
+
+            <div class="destino-card">
+                <img src="images/roma.jpg" alt="Roma">
+                <h3>Roma</h3>
+                <p>🇮🇹 Itália</p>
+            </div>
+
+            <div class="destino-card">
+                <img src="images/buenosaires.jpg" alt="Buenos Aires">
+                <h3>Buenos Aires</h3>
+                <p>🇦🇷 Argentina</p>
+            </div>
+
+            <div class="destino-card">
+                <img src="images/bangkok.jpg" alt="Bangkok">
+                <h3>Bangkok</h3>
+                <p>🇹🇭 Tailândia</p>
+            </div>
+
+        </div>
     </section>
 
-    <section id="contato">
-        <h1>Contato</h1>
+    <section id="contato" class="contato">
+        <div class="contato-container">
+            <div class="contato-form">
+                <h2>Fale Conosco</h2>
+
+                <form class="form-simples">
+                    <input type="text" placeholder="Seu nome" required>
+                    <input type="email" placeholder="Seu email" required>
+                    <textarea placeholder="Sua mensagem..." required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="contato-mensagem">
+                <h3>Obrigado por visitar nossa página!</h3>
+                <p>
+                    Estamos felizes em saber que você chegou até aqui.  
+                    Caso tenha qualquer dúvida sobre pacotes, destinos ou viagens,  
+                    nossa equipe está pronta para te ajudar.
+                </p>
+
+                <p>
+                    Responderemos sua mensagem o mais rápido possível! ✈️🌍
+                </p>
+            </div>
+
+        </div>
     </section>
+
 </body>
 </html>
