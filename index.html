@@ -4,26 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Mundo - Viagens</title>
+    <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
-<script>
-    const carousel = document.querySelector(".carousel");
-    const next = document.querySelector(".next");
-    const prev = document.querySelector(".prev");
-
-    next.addEventListener("click", () => {
-        carousel.scrollLeft += 300;
-    });
-
-    prev.addEventListener("click", () => {
-        carousel.scrollLeft -= 300;
-    });
-</script>
-
 <body>
     <nav class="navbar">
         <img class="logo" src="images/logo.png" alt="Logo Explore Mundo">
+
+        <p class="titulonav">Explore Mundo - Viagens</p>
 
         <ul class="menu">
             <li><a href="#home">Início</a></li>
@@ -132,7 +120,7 @@
     <section id="destinos" class="destinos">
         <h2>Destinos Populares</h2>
 
-        <div class="scroll-destinos">
+        <div class="barra-destinos">
 
             <div class="destino-card">
                 <img src="images/paris.jpg" alt="Paris">
@@ -205,17 +193,17 @@
 
     <section id="contato" class="contato">
         <div class="contato-container">
-            <div class="contato-form">
+            <div class="contato-formulario">
                 <h2>Fale Conosco</h2>
 
-                <form class="form-simples">
+                <form class="formulario">
                     <input type="text" placeholder="Seu nome" required>
                     <input type="email" placeholder="Seu email" required>
                     <textarea placeholder="Sua mensagem..." required></textarea>
                     <button type="submit">Enviar</button>
                 </form>
             </div>
-            <div class="contato-mensagem">
+            <div class="mensagem">
                 <h3>Obrigado por visitar nossa página!</h3>
                 <p>
                     Estamos felizes em saber que você chegou até aqui.  

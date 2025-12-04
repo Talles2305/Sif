@@ -48,6 +48,15 @@
     transform: translateY(-2px);
 }
 
+.titulonav{
+    color: red;
+    font-family: "Science Gothic", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+
 #home {
     display: flex;
     flex-direction: column;
@@ -128,10 +137,9 @@
     font-weight: bold;
 }
 
-
 .pacotes {
     padding: 80px 50px;
-    background: #f5f7fa;
+    background: #cdced1;
 }
 
 .pacotes h2 {
@@ -219,7 +227,7 @@
     margin-bottom: 20px;
 }
 
-.scroll-destinos {
+.barra-destinos {
     display: flex;
     gap: 20px;
     overflow-x: auto;
@@ -230,22 +238,22 @@
     scrollbar-width: thin;
 }
 
-.scroll-destinos::-webkit-scrollbar {
+.barra-destinos::-webkit-scrollbar {
     height: 10px;
 }
 
-.scroll-destinos::-webkit-scrollbar-track {
+.barra-destinos::-webkit-scrollbar-track {
     background: #e0e0e0;
     border-radius: 10px;
 }
 
-.scroll-destinos::-webkit-scrollbar-thumb {
+.barra-destinos::-webkit-scrollbar-thumb {
     background: #1f1ba0;
     border-radius: 10px;
     transition: .3s;
 }
 
-.scroll-destinos::-webkit-scrollbar-thumb:hover {
+.barra-destinos::-webkit-scrollbar-thumb:hover {
     background: #FF8535;
 }
 
@@ -281,14 +289,11 @@
     color: #666;
 }
 
-
-/* SEÇÃO DE CONTATO */
 .contato {
     padding: 80px 40px;
-    background: #f5f7fa;
+    background: #e0e1e2;
 }
 
-/* CONTAINER GERAL */
 .contato-container {
     max-width: 1100px;
     margin: 0 auto;
@@ -300,25 +305,24 @@
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
-/* FORMULÁRIO - LADO ESQUERDO */
-.contato-form {
+.contato-formulario {
     flex: 1;
 }
 
-.contato-form h2 {
+.contato-formulario h2 {
     font-size: 30px;
     margin-bottom: 20px;
     color: #333;
 }
 
-.form-simples {
+.formulario{
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.form-simples input,
-.form-simples textarea {
+.formulario input,
+.formulario textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -326,12 +330,12 @@
     font-size: 15px;
 }
 
-.form-simples textarea {
+.formulario textarea {
     height: 120px;
     resize: none;
 }
 
-.form-simples button {
+.formulario button {
     background: #1f1ba0;
     color: white;
     padding: 14px;
@@ -342,12 +346,11 @@
     transition: .3s;
 }
 
-.form-simples button:hover {
+.formulario button:hover {
     background: #FF8535;
 }
 
-/* MENSAGEM - LADO DIREITO */
-.contato-mensagem {
+.mensagem {
     flex: 1;
     background: linear-gradient(135deg, #1f1ba0, #4f46e5);
     color: white;
@@ -358,12 +361,12 @@
     gap: 20px;
 }
 
-.contato-mensagem h3 {
+.mensagem h3 {
     font-size: 26px;
     font-weight: 700;
 }
 
-.contato-mensagem p {
+.mensagem p {
     font-size: 16px;
     line-height: 1.5;
     opacity: 0.9;
